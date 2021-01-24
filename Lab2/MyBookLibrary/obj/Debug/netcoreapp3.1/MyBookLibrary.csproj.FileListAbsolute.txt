@@ -1,0 +1,12 @@
+C:\Users\DELL\source\repos\Lab2\MyBookLibrary\bin\Debug\netcoreapp3.1\MyBookLibrary.deps.json
+C:\Users\DELL\source\repos\Lab2\MyBookLibrary\bin\Debug\netcoreapp3.1\MyBookLibrary.dll
+C:\Users\DELL\source\repos\Lab2\MyBookLibrary\bin\Debug\netcoreapp3.1\MyBookLibrary.pdb
+C:\Users\DELL\source\repos\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.csprojAssemblyReference.cache
+C:\Users\DELL\source\repos\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.AssemblyInfo.cs
+C:\Users\DELL\source\repos\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.dll
+C:\Users\DELL\source\repos\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.pdb
+C:\Users\DELL\source\repos\Lab2\MyBookLibrary\bin\Debug\netcoreapp3.1\Validation.dll
+C:\Users\DELL\source\repos\Lab2\MyBookLibrary\bin\Debug\netcoreapp3.1\Validation.pdb
+C:\Users\DELL\source\repos\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.csproj.CopyComplete
