@@ -33,7 +33,7 @@ namespace Validation
         {
             bool error = true;
             string tmp = "";
-            string patt = "^[\\sa-zA-Z0-9]{2,30}$";
+            string patt = "^[\\sa-zA-Z]{2,30}$";
 
             while (error)
             {

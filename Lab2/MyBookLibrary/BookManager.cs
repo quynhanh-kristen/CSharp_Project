@@ -113,7 +113,7 @@ namespace MyBookLibrary
 
         public bool UpdateBookInfor()
         {
-            bool check = true;
+      
             Console.Write("Id of the book: ");
             string id = Console.ReadLine();
             Book tmp = FindBook(id);
@@ -123,22 +123,7 @@ namespace MyBookLibrary
             string tmpId = tmp.GetId();
             string saveId = tmpId;
             Console.WriteLine("ID: " + tmpId);
-            if (UpdateFieldOption("ID"))
-            {
-                Console.Write("New ID: ");
-                string newId = "";
-                while (check)
-                {
-                    newId = input.CheckId();
-                    check = false;
-                    if (FindBook(newId) != null)
-                    {
-                        Console.Write("Id had already existed, try again: ");
-                        check = true;
-                    }
-                }
-                tmpId = newId;
-            }
+            
 
             string tmpName = tmp.GetName();
             Console.WriteLine("Name: {0}", tmpName);

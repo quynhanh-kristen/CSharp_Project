@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\Lab2\\Lab2\\Lab2.csproj",
+      "projectUniqueName": "Q:\\PRN292\\CSharp_Project\\Lab2\\Lab2\\Lab2.csproj",
       "projectName": "Lab2",
-      "projectPath": "C:\\Users\\DELL\\source\\repos\\Lab2\\Lab2\\Lab2.csproj",
+      "projectPath": "Q:\\PRN292\\CSharp_Project\\Lab2\\Lab2\\Lab2.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\source\\repos\\Lab2\\Lab2\\obj\\",
+      "outputPath": "Q:\\PRN292\\CSharp_Project\\Lab2\\Lab2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,11 +72,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\DELL\\source\\repos\\Lab2\\MyBookLibrary\\MyBookLibrary.csproj": {
-              "projectPath": "C:\\Users\\DELL\\source\\repos\\Lab2\\MyBookLibrary\\MyBookLibrary.csproj"
+            "Q:\\PRN292\\CSharp_Project\\Lab2\\MyBookLibrary\\MyBookLibrary.csproj": {
+              "projectPath": "Q:\\PRN292\\CSharp_Project\\Lab2\\MyBookLibrary\\MyBookLibrary.csproj"
             },
-            "C:\\Users\\DELL\\source\\repos\\Lab2\\Validation\\Validation.csproj": {
-              "projectPath": "C:\\Users\\DELL\\source\\repos\\Lab2\\Validation\\Validation.csproj"
+            "Q:\\PRN292\\CSharp_Project\\Lab2\\Validation\\Validation.csproj": {
+              "projectPath": "Q:\\PRN292\\CSharp_Project\\Lab2\\Validation\\Validation.csproj"
             }
           }
         }

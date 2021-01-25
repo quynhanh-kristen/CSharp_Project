@@ -6,3 +6,12 @@ C:\Users\DELL\source\repos\Lab2\Validation\obj\Debug\netcoreapp3.1\Validation.As
 C:\Users\DELL\source\repos\Lab2\Validation\obj\Debug\netcoreapp3.1\Validation.csproj.CoreCompileInputs.cache
 C:\Users\DELL\source\repos\Lab2\Validation\obj\Debug\netcoreapp3.1\Validation.dll
 C:\Users\DELL\source\repos\Lab2\Validation\obj\Debug\netcoreapp3.1\Validation.pdb
+Q:\PRN292\CSharp_Project\Lab2\Validation\bin\Debug\netcoreapp3.1\Validation.deps.json
+Q:\PRN292\CSharp_Project\Lab2\Validation\bin\Debug\netcoreapp3.1\Validation.dll
+Q:\PRN292\CSharp_Project\Lab2\Validation\bin\Debug\netcoreapp3.1\Validation.pdb
+Q:\PRN292\CSharp_Project\Lab2\Validation\obj\Debug\netcoreapp3.1\Validation.csprojAssemblyReference.cache
+Q:\PRN292\CSharp_Project\Lab2\Validation\obj\Debug\netcoreapp3.1\Validation.AssemblyInfoInputs.cache
+Q:\PRN292\CSharp_Project\Lab2\Validation\obj\Debug\netcoreapp3.1\Validation.AssemblyInfo.cs
+Q:\PRN292\CSharp_Project\Lab2\Validation\obj\Debug\netcoreapp3.1\Validation.csproj.CoreCompileInputs.cache
+Q:\PRN292\CSharp_Project\Lab2\Validation\obj\Debug\netcoreapp3.1\Validation.dll
+Q:\PRN292\CSharp_Project\Lab2\Validation\obj\Debug\netcoreapp3.1\Validation.pdb

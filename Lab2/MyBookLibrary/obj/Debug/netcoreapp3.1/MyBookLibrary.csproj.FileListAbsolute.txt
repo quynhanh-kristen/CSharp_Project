@@ -10,3 +10,15 @@ C:\Users\DELL\source\repos\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibr
 C:\Users\DELL\source\repos\Lab2\MyBookLibrary\bin\Debug\netcoreapp3.1\Validation.dll
 C:\Users\DELL\source\repos\Lab2\MyBookLibrary\bin\Debug\netcoreapp3.1\Validation.pdb
 C:\Users\DELL\source\repos\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.csproj.CopyComplete
+Q:\PRN292\CSharp_Project\Lab2\MyBookLibrary\bin\Debug\netcoreapp3.1\MyBookLibrary.deps.json
+Q:\PRN292\CSharp_Project\Lab2\MyBookLibrary\bin\Debug\netcoreapp3.1\MyBookLibrary.dll
+Q:\PRN292\CSharp_Project\Lab2\MyBookLibrary\bin\Debug\netcoreapp3.1\MyBookLibrary.pdb
+Q:\PRN292\CSharp_Project\Lab2\MyBookLibrary\bin\Debug\netcoreapp3.1\Validation.dll
+Q:\PRN292\CSharp_Project\Lab2\MyBookLibrary\bin\Debug\netcoreapp3.1\Validation.pdb
+Q:\PRN292\CSharp_Project\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.csprojAssemblyReference.cache
+Q:\PRN292\CSharp_Project\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.AssemblyInfoInputs.cache
+Q:\PRN292\CSharp_Project\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.AssemblyInfo.cs
+Q:\PRN292\CSharp_Project\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.csproj.CoreCompileInputs.cache
+Q:\PRN292\CSharp_Project\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.csproj.CopyComplete
+Q:\PRN292\CSharp_Project\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.dll
+Q:\PRN292\CSharp_Project\Lab2\MyBookLibrary\obj\Debug\netcoreapp3.1\MyBookLibrary.pdb
