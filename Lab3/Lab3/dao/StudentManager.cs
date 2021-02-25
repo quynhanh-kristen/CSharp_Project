@@ -59,7 +59,7 @@ namespace Lab3.dao
             return false;
         }
 
-        bool FindStudent(string id)
+        public bool FindStudent(string id)
         {
             if(studentList != null)
             {
@@ -82,6 +82,6 @@ namespace Lab3.dao
             }
             return false; 
         }
-
+         
     }
 }

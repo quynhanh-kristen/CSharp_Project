@@ -5,6 +5,7 @@ using Lab3.util;
 using Lab3.dto;
 using System.Collections.Generic;
 using Lab3.dao;
+using System.Text.RegularExpressions;
 
 namespace StudentForm
 {
@@ -19,25 +20,33 @@ namespace StudentForm
         {           
             InitializeComponent();
             sm = new StudentManager();
-        }     
+            txtID.Enabled = false;
+        }
         bool ValidateInput()
         {
-            string name = txtFullName.Text.Trim();
             bool bError = false;
-            if (name.Length == 0)
+            string id = txtID.Text.Trim();
+            if (sm.FindStudent(id) && !flag || !Regex.IsMatch(id, "^\\d{3}$"))
             {
-                errorProvider1.SetError(txtFullName, "Please enter your name!");
+                errorProvider1.SetError(txtID, "Please enter ID, just 3-digits number only, please make sure it did not exist: ");
+                bError = true;
+            }
+            string name = txtFullName.Text.Trim();
+            
+            if (!Regex.IsMatch(name,"^[\\s a-zA-Z ]{2,30}$"))
+            {
+                errorProvider1.SetError(txtFullName, "Please enter your name (just characters, from 2 to 30)!");
                 bError = true;
             }
             DateTime currDate = DateTime.Now;
-            int ageLimit = 1;
+            int ageLimit = 18;
             int currYear = currDate.Year;
             DateTime DateofBirth = dTPDOB.Value;
             int birthYear = DateofBirth.Year;
             if (currYear - birthYear < ageLimit)
             {
                 errorProvider1.SetError(dTPDOB,
-                    "Age must be greater than or equal to 18");
+                    "Age must be greater than or equal to " +  ageLimit);
                 bError = true;
             }
             if (radMale.Checked == false && radFemale.Checked == false)
@@ -210,26 +219,7 @@ namespace StudentForm
         }
 
         private void dgStudentsList_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //ID;Fullname;DOB;gender;national;phone;address; major
-            selectedRow = e.RowIndex;
-            if (selectedRow > -1)
-            {
-                DataGridViewRow row = this.dgStudent.Rows[selectedRow];
-                txtID.Text = row.Cells[0].Value.ToString();
-                txtFullName.Text = row.Cells[1].Value.ToString();
-                dTPDOB.Text = row.Cells[2].Value.ToString();
-                string gender = row.Cells[3].Value.ToString();
-                if (gender.Equals("Female"))
-                {
-                    radFemale.Checked = true;
-                    radMale.Checked = false;
-                }                
-                cbNational.Text = row.Cells[4].Value.ToString();
-                mtxtPhone.Text = row.Cells[5].Value.ToString();
-                txtAddress.Text = row.Cells[6].Value.ToString();
-                cbMajor.Text = row.Cells[7].Value.ToString();
-            }
+        {           
 
         }
 
@@ -252,7 +242,7 @@ namespace StudentForm
         {
             if (selectedRow > -1)
             {
-                DialogResult result = MessageBox.Show("Yes or no", "Delete Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("Are you sure to delete information of " + txtID.Text + " ?", "Delete Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if(result == DialogResult.Yes)
                 {
                     dgStudent.Rows.RemoveAt(selectedRow);
@@ -264,13 +254,13 @@ namespace StudentForm
                
             }
         }
-
+        bool flag = false;
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            
+            flag = true;
             if(selectedRow > -1)
             {
-                DialogResult result = MessageBox.Show("Yes or no", "Update Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("Are you sure to save new information of "+ txtID.Text +" ?", "Update Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
                     if (ValidateInput())
@@ -278,6 +268,7 @@ namespace StudentForm
                         AddNewStudent();
                         sm.UpdateStudentInfor(txtID.Text, listTmp);
                         listTmp = null;
+                        flag = false;
                     }                    
                     
                 }
@@ -291,7 +282,44 @@ namespace StudentForm
 
         private void dgStudents_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            dgStudentsList_CellContentClick(sender, e);
+            selectedRow = e.RowIndex;
+            if (selectedRow > -1)
+            {
+                DataGridViewRow row = this.dgStudent.Rows[selectedRow];
+                txtID.Text = row.Cells[0].Value.ToString();
+                txtFullName.Text = row.Cells[1].Value.ToString();
+                dTPDOB.Text = row.Cells[2].Value.ToString();
+                string gender = row.Cells[3].Value.ToString();
+                if (gender.Equals("Female"))
+                {
+                   
+                    radFemale.Checked = true;
+                    radMale.Checked = false;
+                }
+                else
+                {
+                    radFemale.Checked = false;
+                    radMale.Checked = true;
+                }
+                cbNational.Text = row.Cells[4].Value.ToString();
+                mtxtPhone.Text = row.Cells[5].Value.ToString();
+                txtAddress.Text = row.Cells[6].Value.ToString();
+                cbMajor.Text = row.Cells[7].Value.ToString();
+            }
+        }
+
+        private void frmStudent_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure to close this form? Please saving information carefully before leaving.", "Close form Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result != DialogResult.Yes)
+            {
+                e.Cancel = (result == DialogResult.No) ;
+            }
+        }
+
+        private void radMale_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStudent));
             this.label1 = new System.Windows.Forms.Label();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.dTPDOB = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.radMale = new System.Windows.Forms.RadioButton();
             this.radFemale = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radMale = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.cbNational = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -81,6 +82,7 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.pnSearchOptions.SuspendLayout();
@@ -137,18 +139,6 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Gender:";
             // 
-            // radMale
-            // 
-            this.radMale.AutoSize = true;
-            this.radMale.Location = new System.Drawing.Point(36, 15);
-            this.radMale.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.radMale.Name = "radMale";
-            this.radMale.Size = new System.Drawing.Size(63, 24);
-            this.radMale.TabIndex = 3;
-            this.radMale.TabStop = true;
-            this.radMale.Text = "Male";
-            this.radMale.UseVisualStyleBackColor = true;
-            // 
             // radFemale
             // 
             this.radFemale.AutoSize = true;
@@ -157,7 +147,6 @@
             this.radFemale.Name = "radFemale";
             this.radFemale.Size = new System.Drawing.Size(78, 24);
             this.radFemale.TabIndex = 4;
-            this.radFemale.TabStop = true;
             this.radFemale.Text = "Female";
             this.radFemale.UseVisualStyleBackColor = true;
             // 
@@ -172,6 +161,17 @@
             this.groupBox1.Size = new System.Drawing.Size(292, 55);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
+            // 
+            // radMale
+            // 
+            this.radMale.AutoSize = true;
+            this.radMale.Location = new System.Drawing.Point(36, 15);
+            this.radMale.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radMale.Name = "radMale";
+            this.radMale.Size = new System.Drawing.Size(63, 24);
+            this.radMale.TabIndex = 3;
+            this.radMale.Text = "Male";
+            this.radMale.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -577,7 +577,6 @@
             // 
             this.txtID.Location = new System.Drawing.Point(112, 52);
             this.txtID.Name = "txtID";
-            this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(292, 27);
             this.txtID.TabIndex = 34;
             // 
@@ -601,11 +600,21 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(58, 744);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(919, 80);
+            this.label8.TabIndex = 37;
+            this.label8.Text = resources.GetString("label8.Text");
+            // 
             // frmStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1334, 845);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.txtID);
@@ -635,6 +644,7 @@
             this.Name = "frmStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Information Management";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmStudent_FormClosing);
             this.Load += new System.EventHandler(this.frmStudent_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -655,7 +665,6 @@
         private System.Windows.Forms.DateTimePicker dTPDOB;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton radMale;
         private System.Windows.Forms.RadioButton radFemale;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
@@ -704,5 +713,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clMajor;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.RadioButton radMale;
+        private System.Windows.Forms.Label label8;
     }
 }

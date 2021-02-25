@@ -23,6 +23,8 @@ Q:\1_PRN292\CSharp_Project\Lab3\Lab3\bin\Debug\netcoreapp3.1\Lab3.runtimeconfig.
 Q:\1_PRN292\CSharp_Project\Lab3\Lab3\bin\Debug\netcoreapp3.1\Lab3.runtimeconfig.dev.json
 Q:\1_PRN292\CSharp_Project\Lab3\Lab3\bin\Debug\netcoreapp3.1\Lab3.dll
 Q:\1_PRN292\CSharp_Project\Lab3\Lab3\bin\Debug\netcoreapp3.1\Lab3.pdb
+Q:\1_PRN292\CSharp_Project\Lab3\Lab3\obj\Debug\netcoreapp3.1\StudentForm.FrmSearchResult.resources
+Q:\1_PRN292\CSharp_Project\Lab3\Lab3\obj\Debug\netcoreapp3.1\StudentForm.frmStudent.resources
 Q:\1_PRN292\CSharp_Project\Lab3\Lab3\obj\Debug\netcoreapp3.1\Lab3.Properties.Resources.resources
 Q:\1_PRN292\CSharp_Project\Lab3\Lab3\obj\Debug\netcoreapp3.1\Lab3.csproj.GenerateResource.cache
 Q:\1_PRN292\CSharp_Project\Lab3\Lab3\obj\Debug\netcoreapp3.1\Lab3.AssemblyInfoInputs.cache
@@ -31,6 +33,3 @@ Q:\1_PRN292\CSharp_Project\Lab3\Lab3\obj\Debug\netcoreapp3.1\Lab3.csproj.CoreCom
 Q:\1_PRN292\CSharp_Project\Lab3\Lab3\obj\Debug\netcoreapp3.1\Lab3.dll
 Q:\1_PRN292\CSharp_Project\Lab3\Lab3\obj\Debug\netcoreapp3.1\Lab3.pdb
 Q:\1_PRN292\CSharp_Project\Lab3\Lab3\obj\Debug\netcoreapp3.1\Lab3.genruntimeconfig.cache
-Q:\1_PRN292\CSharp_Project\Lab3\Lab3\obj\Debug\netcoreapp3.1\Lab3.csprojAssemblyReference.cache
-Q:\1_PRN292\CSharp_Project\Lab3\Lab3\obj\Debug\netcoreapp3.1\StudentForm.FrmSearchResult.resources
-Q:\1_PRN292\CSharp_Project\Lab3\Lab3\obj\Debug\netcoreapp3.1\StudentForm.frmStudent.resources
